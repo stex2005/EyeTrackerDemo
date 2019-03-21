@@ -1063,7 +1063,7 @@ class Control:
         # set algorithm parameters
         # self.ETCoord.gazedata_array  = numpy.zeros((2,self.ETCoord.fixation_time))
         # connect to webcam
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(1)
         self.delay = 0
         self.i_arc=0
 
@@ -1639,7 +1639,7 @@ class EyetrackerBrowser:
 
         # self.ControlThread.stop.set()
 
-        # Get active threads
+        # Get active threads  
         self.mainloop_thread.stop()
 
         threads_list = threading.enumerate()
